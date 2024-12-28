@@ -1,0 +1,98 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin-left: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top:0.5rem;
+    }
+    .experience-item{
+        border: 1px solid #ddd;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: white;
+    }
+    .project{
+        border: 1px solid #ddd;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: white;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+    .animate-charcter {
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        -20deg,
+        #2980B9 0%,
+        #6DD5FA 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclipping 2s linear infinite;
+    }
+
+    @keyframes textclipping {
+      from {
+        background-size: 200%;
+      }
+      to {
+        background-size: 400%;
+      }
+    }
